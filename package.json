@@ -1,0 +1,46 @@
+{
+  "name": "@salable/sdk",
+  "version": "0.1.0",
+  "description": "",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "types": "dist/index.d.ts",
+  "repository": "https://github.com/Salable/sdk",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c",
+    "preversion": "npm run build",
+    "generate:sdk": "kiota generate --openapi ./openapi.yaml -o ./src/sdk --language typescript --class-name Salable --clean-output",
+    "playground": "npx tsx playground.ts"
+  },
+  "author": "Salable",
+  "license": "ISC",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@microsoft/kiota-abstractions": "1.0.0-preview.94",
+    "@microsoft/kiota-http-fetchlibrary": "1.0.0-preview.94",
+    "@microsoft/kiota-serialization-form": "1.0.0-preview.94",
+    "@microsoft/kiota-serialization-json": "1.0.0-preview.94",
+    "@microsoft/kiota-serialization-multipart": "1.0.0-preview.94",
+    "@microsoft/kiota-serialization-text": "1.0.0-preview.94",
+    "@rollup/plugin-commonjs": "28.0.0",
+    "@rollup/plugin-json": "6.1.0",
+    "@rollup/plugin-node-resolve": "15.0.1",
+    "@rollup/plugin-replace": "5.0.1",
+    "dotenv": "16.5.0",
+    "rollup-plugin-cleaner": "^1.0.0",
+    "rollup-plugin-peer-deps-external": "2.2.4",
+    "rollup-plugin-typescript2": "0.36.0",
+    "@types/node": "22.7.0"
+  },
+  "devDependencies": {
+    "@semantic-release/changelog": "6.0.1",
+    "@semantic-release/git": "10.0.1",
+    "semantic-release": "24.1.1"
+  }
+}

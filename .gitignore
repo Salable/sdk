@@ -1,0 +1,9 @@
+.idea
+node_modules
+.env
+scratch.ts
+dist
+src/sdk
+.nvmrc
+playground.ts
+openapi.yaml
