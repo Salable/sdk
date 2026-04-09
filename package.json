@@ -5,9 +5,11 @@
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "types": "dist/index.d.ts",
-  "repository": "https://github.com/Salable/sdk",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Salable/sdk"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rollup -c",
     "preversion": "npm run build",
     "generate:sdk": "kiota generate --openapi ./openapi.yaml -o ./src/sdk --language typescript --class-name Salable --clean-output"
