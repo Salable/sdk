@@ -16,6 +16,7 @@ jobs:
     outputs:
       version: ${{ steps.release.outputs.version }}
     steps:
+      - uses: microsoft/setup-kiota@v0.5.0
       - name: Generate token
         id: generate_token
         uses: actions/create-github-app-token@v3
