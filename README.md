@@ -23,7 +23,7 @@ npm install @salable/sdk
 
 ### Initialisation
 
-Create a single `Salable` instance using your API key. All API calls are made through this instance.
+Create a single `Salable` instance using your secret API key. All API calls are made through this instance.
 
 ```typescript
 import { Salable } from '@salable/sdk';
