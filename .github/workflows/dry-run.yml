@@ -5,8 +5,8 @@ on:
     branches: [main]
 
 jobs:
-  release:
-    name: Release
+  dry_run_release:
+    name: Dry Run Release
     runs-on: ubuntu-latest
     permissions:
       contents: read
