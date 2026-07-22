@@ -1,3 +1,10 @@
+## [1.0.24](https://github.com/Salable/sdk/compare/v1.0.23...v1.0.24) (2026-07-22)
+
+
+### Bug Fixes
+
+* pin kiota version - testing fix in dry run PR workflow ([#10](https://github.com/Salable/sdk/issues/10)) ([c3f0a11](https://github.com/Salable/sdk/commit/c3f0a11ec0b933f0129e7c89b365b939868bc7f3))
+
 ## [1.0.23](https://github.com/Salable/sdk/compare/v1.0.22...v1.0.23) (2026-06-24)
 
 
