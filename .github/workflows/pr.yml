@@ -1,0 +1,37 @@
+name: PR
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  dry_run_release:
+    name: Dry Run Release
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: microsoft/setup-kiota@v0.5.0
+        with:
+          version: 'v1.32.2'
+
+      - uses: actions/checkout@v6
+
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Fetch OpenAPI spec
+        run: |
+          curl -L --fail \
+            https://salable.app/openapi.yaml \
+            -o openapi.yaml
+
+      - name: Generate SDK with Kiota
+        run: npm run generate:sdk
+
+      - name: Build
+        run: npm run build
