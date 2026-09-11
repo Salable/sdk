@@ -1,3 +1,10 @@
+## [1.0.43](https://github.com/Salable/sdk/compare/v1.0.42...v1.0.43) (2026-09-11)
+
+
+### Bug Fixes
+
+* enum write error and bump kiota ([#18](https://github.com/Salable/sdk/issues/18)) ([5538682](https://github.com/Salable/sdk/commit/55386821a00ee8e5f18a49bc7f7b67737e1c6c54))
+
 ## [1.0.42](https://github.com/Salable/sdk/compare/v1.0.41...v1.0.42) (2026-09-11)
 
 
