@@ -24,12 +24,12 @@
     "access": "public"
   },
   "dependencies": {
-    "@microsoft/kiota-abstractions": "1.0.0-preview.94",
-    "@microsoft/kiota-http-fetchlibrary": "1.0.0-preview.94",
-    "@microsoft/kiota-serialization-form": "1.0.0-preview.94",
-    "@microsoft/kiota-serialization-json": "1.0.0-preview.94",
-    "@microsoft/kiota-serialization-multipart": "1.0.0-preview.94",
-    "@microsoft/kiota-serialization-text": "1.0.0-preview.94",
+    "@microsoft/kiota-abstractions": "1.0.0-preview.107",
+    "@microsoft/kiota-http-fetchlibrary": "1.0.0-preview.107",
+    "@microsoft/kiota-serialization-form": "1.0.0-preview.107",
+    "@microsoft/kiota-serialization-json": "1.0.0-preview.107",
+    "@microsoft/kiota-serialization-multipart": "1.0.0-preview.107",
+    "@microsoft/kiota-serialization-text": "1.0.0-preview.107",
     "@rollup/plugin-commonjs": "28.0.0",
     "@rollup/plugin-json": "6.1.0",
     "@rollup/plugin-node-resolve": "15.0.1",
