@@ -1,3 +1,10 @@
+## [1.0.73](https://github.com/Salable/sdk/compare/v1.0.72...v1.0.73) (2026-11-23)
+
+
+### Bug Fixes
+
+* openapi spec updated ([6921515](https://github.com/Salable/sdk/commit/6921515790c1d2e6277be0df5c97e4da1d66c553))
+
 ## [1.0.72](https://github.com/Salable/sdk/compare/v1.0.71...v1.0.72) (2026-11-23)
 
 
